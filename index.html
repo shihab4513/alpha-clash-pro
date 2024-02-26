@@ -67,7 +67,7 @@
 <body class="">
     <main class="bg-[#010313FF] min-h-screen bg-[url(images/background.png)]  bg-no-repeat bg-center">
         <!-- Home Screen -->
-        <section class="home min-h-screen flex justify-center items-center">
+        <section id="home" class="min-h-screen flex justify-center items-center">
 
             <div class="flex flex-col items-center space-y-14">
                 <h1 class="anton text-white text-[10.625rem] uppercase">Alpha class pro</h1>
@@ -79,7 +79,7 @@
 
         </section>
         <!-- Section playground -->
-        <section class="play-ground hidden">
+        <section id="play-ground" class="hidden">
 
             <div class="flex flex-col items-center gap-24 pt-24">
                 <!-- screen -->
@@ -133,14 +133,14 @@
 
                     <button class="">
                         <img src="images/life.svg" alt="" srcset="">
-                        Button
+
                     </button>
 
 
 
                     <button class="">
                         <img src="images/score.svg" alt="" srcset="">
-                        Button
+
                     </button>
 
 
@@ -150,7 +150,7 @@
         </section>
         <!-- Score -->
 
-        <section class="score flex justify-center items-center min-h-screen hidden">
+        <section id="score" class="flex justify-center items-center min-h-screen hidden">
             <div class="text-center space-y-4 score-bg w-96 h-72 pt-11 pb-11 pl-12 pr-12">
                 <h1 class="text-white poppins font-medium text-[4rem]"><span>Score: </span>
                     <span>14</span>
@@ -163,7 +163,7 @@
         </section>
     </main>
 
-
+    <script src="utility.js"></script>
     <script src="alpha-clash.js"></script>
 </body>
 

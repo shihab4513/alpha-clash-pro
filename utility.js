@@ -34,9 +34,26 @@ function increasePoints() {
     current.innerText = currentPoint;
 
 }
+function gameOver() {
+    hideElementById('play-ground');
+    showElementById('score');
+    const finalScore = document.getElementById('final-sore');
+    const currentScore = document.getElementById('points');
+    finalScore.innerText = currentScore.innerText;
+}
 function decreaseLife() {
     const current = document.getElementById('life');
     let currentLife = parseInt(current.innerText);
     currentLife--;
+    if (currentLife < 0) {
+        gameOver();
+    }
     current.innerText = currentLife;
+}
+function resetScore() {
+    const current = document.getElementById('points');
+    current.innerText = '0';
+    const currentL = document.getElementById('life');
+    currentL.innerText = '5';
+
 }

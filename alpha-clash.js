@@ -13,6 +13,8 @@ function handleKeyboardButtonPress(event) {
         increasePoints();
         continueGame();
 
+    } else if (playerPressed === 'escape') {
+        gameOver();
     }
     else {
         console.log('Not matched');
@@ -39,10 +41,13 @@ function continueGame() {
 // Step-1 : hide the home screen. to hide the screen add the class hidden to the home section
 function play() {
     hideElementById('home');
-
+    hideElementById('score');
+    resetScore();
     // show the playground
     showElementById('play-ground');
 
     continueGame();
 }
+
+
 

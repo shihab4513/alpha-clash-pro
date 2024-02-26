@@ -23,3 +23,7 @@ function setBackgroundColorById(element) {
     const bg = document.getElementById(element);
     bg.classList.add('bg-[#FFA500]');
 }
+function removeBackgroundColorById(element) {
+    const bg = document.getElementById(element);
+    bg.classList.remove('bg-[#FFA500]');
+}

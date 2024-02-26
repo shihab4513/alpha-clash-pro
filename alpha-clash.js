@@ -9,6 +9,9 @@ function handleKeyboardButtonPress(event) {
     // Checked matched or not
     if (playerPressed === expectedAlphabet) {
         console.log('matched');
+        removeBackgroundColorById(expectedAlphabet);
+        continueGame();
+
     }
     else {
         console.log('Not matched');

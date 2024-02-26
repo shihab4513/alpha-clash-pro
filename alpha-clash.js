@@ -1,3 +1,11 @@
+function handleKeyboardButtonPress() {
+    console.log('button pressed');
+
+}
+
+document.addEventListener('keyup', handleKeyboardButtonPress);
+
+
 function continueGame() {
     const alphabet = getARandomAlphabet();
 

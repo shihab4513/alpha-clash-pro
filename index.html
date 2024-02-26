@@ -52,6 +52,14 @@
             height: 30px;
             text-align: center;
         }
+
+        .score-bg {
+            box-sizing: border-box;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+
+            background: linear-gradient(136.67deg, rgba(255, 255, 255, 0.56) 0%, rgba(152, 151, 151, 0) 102.037%);
+        }
     </style>
 </head>
 <!-- min-h-screen mane viewport e joto toko screen dekha jabe toto toko show korbe with background color -->
@@ -59,18 +67,19 @@
 <body class="">
     <main class="bg-[#010313FF] min-h-screen bg-[url(images/background.png)]  bg-no-repeat bg-center">
         <!-- Home Screen -->
-        <section class="home min-h-screen flex justify-center items-center hidden">
+        <section class="home min-h-screen flex justify-center items-center">
 
             <div class="flex flex-col items-center space-y-14">
                 <h1 class="anton text-white text-[10.625rem] uppercase">Alpha class pro</h1>
                 <p class="text-[1.5rem] text-white poppins font-medium">Unleash Your Keyboard Kung Fu : Press “Enter” to
                     Play</p>
-                <button class="btn "><span class="text-[#010313] text-[1.5rem] font-semibold">Play Now</span></button>
+                <button class="btn " onclick="play()"><span class="text-[#010313] text-[1.5rem] font-semibold">Play
+                        Now</span></button>
             </div>
 
         </section>
         <!-- Section playground -->
-        <section class="play-ground">
+        <section class="play-ground hidden">
 
             <div class="flex flex-col items-center gap-24 pt-24">
                 <!-- screen -->
@@ -119,7 +128,7 @@
                 </div>
 
                 <!-- life score -->
-                <div class="flex justify-between">
+                <div class="flex justify-between w-[68rem]">
 
 
                     <button class="">
@@ -141,10 +150,21 @@
         </section>
         <!-- Score -->
 
-        <section class="score">
+        <section class="score flex justify-center items-center min-h-screen hidden">
+            <div class="text-center space-y-4 score-bg w-96 h-72 pt-11 pb-11 pl-12 pr-12">
+                <h1 class="text-white poppins font-medium text-[4rem]"><span>Score: </span>
+                    <span>14</span>
+                </h1>
+                <button class="btn"><span class="poppins font-semibold text-black text-[1.5rem]">Play
+                        Now</span></button>
+                <p class="font-medium text-[1.25rem] text-white">Practice will make you Pro</p>
 
+            </div>
         </section>
     </main>
+
+
+    <script src="alpha-clash.js"></script>
 </body>
 
 </html>

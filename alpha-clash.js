@@ -10,11 +10,13 @@ function handleKeyboardButtonPress(event) {
     if (playerPressed === expectedAlphabet) {
         console.log('matched');
         removeBackgroundColorById(expectedAlphabet);
+        increasePoints();
         continueGame();
 
     }
     else {
         console.log('Not matched');
+        decreaseLife();
     }
 
 }

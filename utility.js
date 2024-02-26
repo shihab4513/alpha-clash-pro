@@ -27,3 +27,16 @@ function removeBackgroundColorById(element) {
     const bg = document.getElementById(element);
     bg.classList.remove('bg-[#FFA500]');
 }
+function increasePoints() {
+    const current = document.getElementById('points');
+    let currentPoint = parseInt(current.innerText);
+    currentPoint++;
+    current.innerText = currentPoint;
+
+}
+function decreaseLife() {
+    const current = document.getElementById('life');
+    let currentLife = parseInt(current.innerText);
+    currentLife--;
+    current.innerText = currentLife;
+}

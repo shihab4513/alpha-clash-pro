@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -34,11 +34,76 @@
             font-weight: 400;
             font-style: normal;
         }
+        
+        
+
     </style>
 </head>
+<!-- min-h-screen mane viewport e joto toko screen dekha jabe toto toko show korbe with background color -->
 
-<body>
+<body class="">
+    <main class="bg-[#010313FF] min-h-screen bg-[url(images/background.png)]  bg-no-repeat bg-center" >
+        <!-- Home Screen -->
+        <section class="home min-h-screen flex justify-center items-center">
+            <div class="flex flex-col items-center space-y-14">
+                <h1 class="anton text-white text-[10.625rem] uppercase">Alpha class pro</h1>
+                <p class="text-[1.5rem] text-white poppins font-medium">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+                <button class="btn "><span class="text-[#010313] text-[1.5rem] font-semibold">Play Now</span></button>
+            </div>
+           
+        </section>
+        <!-- Section playground -->
+        <section class="play-ground">
 
+            <div>
+                <!-- screen -->
+
+                <!-- keyboard -->
+                <div>
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">q</kbd>
+                        <kbd class="kbd">w</kbd>
+                        <kbd class="kbd">e</kbd>
+                        <kbd class="kbd">r</kbd>
+                        <kbd class="kbd">t</kbd>
+                        <kbd class="kbd">y</kbd>
+                        <kbd class="kbd">u</kbd>
+                        <kbd class="kbd">i</kbd>
+                        <kbd class="kbd">o</kbd>
+                        <kbd class="kbd">p</kbd>
+                      </div> 
+                      <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">a</kbd>
+                        <kbd class="kbd">s</kbd>
+                        <kbd class="kbd">d</kbd>
+                        <kbd class="kbd">f</kbd>
+                        <kbd class="kbd">g</kbd>
+                        <kbd class="kbd">h</kbd>
+                        <kbd class="kbd">j</kbd>
+                        <kbd class="kbd">k</kbd>
+                        <kbd class="kbd">l</kbd>
+                      </div> 
+                      <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">z</kbd>
+                        <kbd class="kbd">x</kbd>
+                        <kbd class="kbd">c</kbd>
+                        <kbd class="kbd">v</kbd>
+                        <kbd class="kbd">b</kbd>
+                        <kbd class="kbd">n</kbd>
+                        <kbd class="kbd">m</kbd>
+                        <kbd class="kbd">/</kbd>
+                      </div>
+                </div>
+
+                <!-- life score -->
+            </div>
+
+        </section>
+        <!-- Score -->
+        <section class="score">
+
+        </section>
+    </main>
 </body>
 
 </html>

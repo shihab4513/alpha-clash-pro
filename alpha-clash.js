@@ -1,5 +1,18 @@
-function handleKeyboardButtonPress() {
-    console.log('button pressed');
+function handleKeyboardButtonPress(event) {
+
+    const playerPressed = (event.key).toLowerCase();
+
+    // expected key
+    const expectedKey = document.getElementById('current-alphabet');
+    const expectedAlphabet = (expectedKey.innerText).toLowerCase();
+
+    // Checked matched or not
+    if (playerPressed === expectedAlphabet) {
+        console.log('matched');
+    }
+    else {
+        console.log('Not matched');
+    }
 
 }
 
